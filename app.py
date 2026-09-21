@@ -1,15 +1,15 @@
 import json
 import random
-import os
+#import os
 
 import streamlit as st
 from openai import OpenAI
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 
-# open_api_key = st.secrets['OPENROUTER_API_KEY'] 
-load_dotenv()
-open_api_key = os.getenv("OPENROUTER_API_KEY")
+open_api_key = st.secrets['OPENROUTER_API_KEY'] 
+#load_dotenv()
+#open_api_key = os.getenv("OPENROUTER_API_KEY")
 if not open_api_key:
     raise RuntimeError("OPENROUTER_API_KEY is not configured")
 
